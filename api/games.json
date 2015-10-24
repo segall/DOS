@@ -1,0 +1,28 @@
+{
+	"games": [
+		{
+			"title": "The Dark Knight",
+			"description": "Join the Dark Knight on a thrilling adventure through Gotham city.  Have the last laugh; defeat The Joker and win huge cash prizes.",
+			"image": "/images/the-dark-night.jpg",
+			"cta": "https://www.hippodromeonline.com/#the-dark-night"
+		},
+		{
+			"title": "Immortal Romance",
+			"description": "Can you out run the creatures of the night in this dark tale about wealth, blood and lust?",
+			"image": "/images/immortal-romance.jpg",
+			"cta": "https://www.hippodromeonline.com/#immortal-romance"
+		},
+		{
+			"title": "Live Dealers",
+			"description": "Win big with our live dealers. Login to our live dealer rooms and play your favourite table games, all the thrill of being at the casino from the comfort of your own home.",
+			"image": "/images/live-dealers.jpg",
+			"cta": "https://www.hippodromeonline.com/#live-dealers"
+		},
+		{
+			"title": "Mega Moolah",
+			"description": "Go on an African safari with our most popular progressive slot of all time.  Keep an eye on that jackpot total and you could will over &pound;1 million!",
+			"image": "/images/mega-moolah.jpg",
+			"cta": "https://www.hippodromeonline.com/#mega-moolah"
+		}
+	]
+}
