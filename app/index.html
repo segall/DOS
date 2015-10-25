@@ -2,20 +2,35 @@
 <html ng-app="fdt">
 <head>
 	<title>Frontend Developer Task</title>
-	<!-- bower:css -->
-	<!-- endbower -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
-<body>
+<body class="container" ng-controller="GameListCtrl">
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <!-- endbower -->
 
-	It works! Good luck and happy coding :) test
+    <script src="/scripts/app.js"></script>
 
-	<!-- bower:js -->
-	<script src="/bower_components/angular/angular.js"></script>
-	<!-- endbower -->
-	<!-- include: "type": "js", "files": "scripts/app-templates.js, scripts/app.js, scripts/**/!(*.spec)*.js" -->
-	<script src="/scripts/app-templates.js"></script>
-	<script src="/scripts/app.js"></script>
-	<!-- /include -->
-
+    <p> <H2>Select a game:</H2></p>
+    <div class="row">
+            <div class="panel panel-default" >
+                <div class="panel-heading my-switch-animation"  ng-repeat="game in games | orderBy:orderProp">
+                    <button class="btn btn-info" ng-click="showDetails = ! showDetails">{{game.title}}</button>
+                    <p></p>
+                    <div class="thumbnail listing" ng-show="showDetails">
+                        <div >
+                            <img ng-src="{{game.image}}">
+                            <p>{{game.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>

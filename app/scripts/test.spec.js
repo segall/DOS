@@ -1,8 +1,10 @@
-describe('This test', function () {
+describe('myApp', function () {
 
-	it('should definitely work', function () {
+    it('should create "games" model with 4 games', function () {
+        var scope = {},
+            ctrl = new GameListCtrl(scope);
 
-		expect(true).toBe(true);
-	});
+        expect(scope.games.length).toBe(4);
+    });
 
 });

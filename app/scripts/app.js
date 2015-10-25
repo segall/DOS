@@ -1,7 +1,9 @@
-(function() {
-    'use strict';
+var myApp = angular.module('fdt', ['ngAnimate']);
 
-    angular
-        .module('fdt', ['app-templates']);
+myApp.controller('GameListCtrl', function ($scope, $http) {
+    $http.get('http://localhost:8080/api/games').success(function (data) {
+        $scope.games = data.games;
+    });
 
-})();
+    $scope.orderProp = 'title';
+});
